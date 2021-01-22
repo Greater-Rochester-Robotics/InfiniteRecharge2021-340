@@ -16,11 +16,11 @@ public class BarrelRace extends Auto340Command {
    */
   public BarrelRace() {
     super(
-    (new RunPath(PathList.AUTONAV_BARREL.FIRST_CURVE)),
-    (new RunPath(PathList.AUTONAV_BARREL.INTO_CIRCLE)),
-    (new RunPath(PathList.AUTONAV_BARREL.CIRCLE)),
-    (new RunPath(PathList.AUTONAV_BARREL.OUT_OF_CIRCLE)),
-    (new RunPath(PathList.AUTONAV_BARREL.SECOND_CURVE))
+    (new RunPath(PathList.AUTONAV_BARREL.FIRST_CURVE,false)),
+    (new RunPath(PathList.AUTONAV_BARREL.INTO_CIRCLE,false)),
+    (new RunPath(PathList.AUTONAV_BARREL.CIRCLE,false)),
+    (new RunPath(PathList.AUTONAV_BARREL.OUT_OF_CIRCLE,false)),
+    (new RunPath(PathList.AUTONAV_BARREL.SECOND_CURVE,false))
       );
   }
 
