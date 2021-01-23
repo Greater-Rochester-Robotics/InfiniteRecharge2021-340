@@ -7,6 +7,7 @@
 
 package frc.robot.commands.Auto;
 
+import edu.wpi.first.wpilibj.trajectory.TrajectoryUtil;
 import frc.robot.commands.pathing.PathList;
 import frc.robot.commands.pathing.RunPath;
 
@@ -16,7 +17,7 @@ public class BarrelRace extends Auto340Command {
    */
   public BarrelRace() {
     super(
-    (new RunPath(PathList.AUTONAV_BARREL.FIRST_CURVE,false)),
+    (new RunPath(PathList.AUTONAV_BARREL.FIRST_CURVE,true)),
     (new RunPath(PathList.AUTONAV_BARREL.INTO_CIRCLE,false)),
     (new RunPath(PathList.AUTONAV_BARREL.CIRCLE,false)),
     (new RunPath(PathList.AUTONAV_BARREL.OUT_OF_CIRCLE,false)),

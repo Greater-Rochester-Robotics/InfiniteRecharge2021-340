@@ -278,9 +278,9 @@ public static final class AUTONAV_BARREL {
 				, 191));
 
 			public static final Path INTO_CIRCLE = new Path(x -> .4, new PathSegment( 
-				/* {"start":{"x":316,"y":272},"mid1":{"x":390,"y":272},"mid2":{"x":395,"y":295},"end":{"x":410,"y":320}} */
-				new Vec2(316, 272), new Vec2(390, 272), new Vec2(395, 295), new Vec2(410, 320) 
-				, 114));
+				/* {"start":{"x":316,"y":272},"mid1":{"x":390,"y":272},"mid2":{"x":400,"y":275},"end":{"x":415,"y":300}} */
+				new Vec2(316, 272), new Vec2(390, 272), new Vec2(400, 275), new Vec2(415, 300) 
+				, 110));
 
 			public static final Path CIRCLE = new Path(x -> .4, new PathSegment( 
 				/* {"start":{"x":327,"y":210},"mid1":{"x":410,"y":305},"mid2":{"x":410,"y":115},"end":{"x":327,"y":210}} */
@@ -288,10 +288,15 @@ public static final class AUTONAV_BARREL {
 				, 179));
 			
 			public static final Path OUT_OF_CIRCLE = new Path(x -> .4, new PathSegment( 
-				/* {"start":{"x":311,"y":191},"mid1":{"x":313,"y":220},"mid2":{"x":260,"y":238},"end":{"x":205,"y":238}} */
-				new Vec2(311, 191), new Vec2(313, 220), new Vec2(260, 238), new Vec2(205, 238) 
-				, 126));
-			//Have to still edit the out of circle to be the reverse of the 'into circle'
+				/* {"start":{"x":415,"y":234},"mid1":{"x":400,"y":259},"mid2":{"x":390,"y":272},"end":{"x":316,"y":272}} */
+				new Vec2(415, 234), new Vec2(400, 259), new Vec2(390, 272), new Vec2(316, 272) 
+				, 113));
+
+			// public static final Path OUT_OF_CIRCLE = new Path(x -> .4, new PathSegment( 
+			// /* {"start":{"x":410,"y":320},"mid1":{"x":395,"y":295},"mid2":{"x":390,"y":272},"end":{"x":316,"y":272}} */
+			// new Vec2(410, 320), new Vec2(395, 295), new Vec2(390, 272), new Vec2(316, 272) 
+			// , 114));
+
 			public static final Path SECOND_CURVE = new Path(x -> .4, new PathSegment( 
 				/* {"start":{"x":234,"y":237},"mid1":{"x":164,"y":237},"mid2":{"x":145,"y":166},"end":{"x":90,"y":166}} */
 				new Vec2(234, 237), new Vec2(164, 237), new Vec2(145, 166), new Vec2(90, 166) 
