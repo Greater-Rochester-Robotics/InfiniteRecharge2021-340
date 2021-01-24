@@ -282,11 +282,20 @@ public static final class AUTONAV_BARREL {
 				new Vec2(316, 272), new Vec2(390, 272), new Vec2(400, 275), new Vec2(415, 300) 
 				, 110));
 
-			public static final Path CIRCLE = new Path(x -> .4, new PathSegment( 
-				/* {"start":{"x":327,"y":210},"mid1":{"x":410,"y":305},"mid2":{"x":410,"y":115},"end":{"x":327,"y":210}} */
-				new Vec2(327, 210), new Vec2(410, 305), new Vec2(410, 115), new Vec2(327, 210) 
-				, 179));
-			
+			// public static final Path CIRCLE = new Path(x -> .4, new PathSegment( 
+			// 	/* {"start":{"x":315,"y":210},"mid1":{"x":400,"y":295},"mid2":{"x":400,"y":125},"end":{"x":315,"y":210}} */
+			// 	new Vec2(315, 210), new Vec2(400, 295), new Vec2(400, 125), new Vec2(315, 210) 
+			// 	, 174));
+			public static final Path CIRCLE_ONE = new Path(x -> .4, new PathSegment( 
+				/* {"start":{"x":315,"y":210},"mid1":{"x":335,"y":254},"mid2":{"x":374,"y":242},"end":{"x":389,"y":206}} */
+				new Vec2(315, 210), new Vec2(335, 254), new Vec2(374, 242), new Vec2(389, 206) 
+				, 102));
+
+			public static final Path CIRCLE_TWO = new Path(x -> .4, new PathSegment( 
+				/* {"start":{"x":389,"y":214},"mid1":{"x":374,"y":178},"mid2":{"x":335,"y":166},"end":{"x":315,"y":210}} */
+				new Vec2(389, 214), new Vec2(374, 178), new Vec2(335, 166), new Vec2(315, 210) 
+				, 102));
+
 			public static final Path OUT_OF_CIRCLE = new Path(x -> .4, new PathSegment( 
 				/* {"start":{"x":415,"y":234},"mid1":{"x":400,"y":259},"mid2":{"x":390,"y":272},"end":{"x":316,"y":272}} */
 				new Vec2(415, 234), new Vec2(400, 259), new Vec2(390, 272), new Vec2(316, 272) 
