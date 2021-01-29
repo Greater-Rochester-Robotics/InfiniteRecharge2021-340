@@ -20,6 +20,7 @@ import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.CommandScheduler;
 import frc.robot.commands.Auto.Auto340Command;
 import frc.robot.commands.Auto.BarrelRace;
+import frc.robot.commands.Auto.BouncyPath;
 import frc.robot.commands.Auto.ColorWheelSteal;
 import frc.robot.commands.Auto.EasyShoot;
 import frc.robot.commands.Auto.FullTrenchRun;
@@ -100,6 +101,8 @@ public class Robot extends TimedRobot {
     registerAutoMode(RobotContainer.autoChooser, "Magic Eight Ball", new TheEighthHokage());
 
     registerAutoMode(RobotContainer.autoChooser, "Barrel Racing 64", new BarrelRace());
+
+    registerAutoMode(RobotContainer.autoChooser, "Bouncy Path", new BouncyPath());
     
     SmartDashboard.putData(RobotContainer.autoChooser);
     // maybe the heck stuff here to make sure its only done once:

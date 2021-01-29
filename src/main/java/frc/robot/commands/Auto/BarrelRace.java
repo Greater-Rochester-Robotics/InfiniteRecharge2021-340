@@ -7,7 +7,6 @@
 
 package frc.robot.commands.Auto;
 
-import edu.wpi.first.wpilibj.trajectory.TrajectoryUtil;
 import frc.robot.commands.pathing.PathList;
 import frc.robot.commands.pathing.RunPath;
 
