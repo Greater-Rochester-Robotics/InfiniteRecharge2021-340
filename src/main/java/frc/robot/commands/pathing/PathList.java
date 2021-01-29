@@ -271,13 +271,14 @@ public static final class AUTONAV_BOUNCE_PATH {
 					new Vec2(150, 103), new Vec2(150, 170), new Vec2(150, 170), new Vec2(75, 170) 
 					, 128));
 		}
+
 public static final class AUTONAV_BARREL {
-			public static final Path FIRST_CURVE = new Path(x -> .4, new PathSegment( 
+			public static final Path FIRST_CURVE = new Path(x -> .75, new PathSegment( 
 				/* {"start":{"x":86,"y":237},"mid1":{"x":169,"y":237},"mid2":{"x":133,"y":178},"end":{"x":261,"y":178}} */
 				new Vec2(86, 237), new Vec2(169, 237), new Vec2(133, 178), new Vec2(261, 178) 
 				, 191));
 
-			public static final Path INTO_CIRCLE = new Path(x -> .4, new PathSegment( 
+			public static final Path INTO_CIRCLE = new Path(x -> .70, new PathSegment( 
 				/* {"start":{"x":316,"y":272},"mid1":{"x":390,"y":272},"mid2":{"x":400,"y":275},"end":{"x":415,"y":300}} */
 				new Vec2(316, 272), new Vec2(390, 272), new Vec2(400, 275), new Vec2(415, 300) 
 				, 110));
@@ -286,30 +287,30 @@ public static final class AUTONAV_BARREL {
 			// 	/* {"start":{"x":315,"y":210},"mid1":{"x":400,"y":295},"mid2":{"x":400,"y":125},"end":{"x":315,"y":210}} */
 			// 	new Vec2(315, 210), new Vec2(400, 295), new Vec2(400, 125), new Vec2(315, 210) 
 			// 	, 174));
-			public static final Path CIRCLE_ONE = new Path(x -> .4, new PathSegment( 
-				/* {"start":{"x":315,"y":210},"mid1":{"x":335,"y":254},"mid2":{"x":374,"y":242},"end":{"x":389,"y":206}} */
-				new Vec2(315, 210), new Vec2(335, 254), new Vec2(374, 242), new Vec2(389, 206) 
-				, 102));
+			public static final Path CIRCLE_ONE = new Path(x -> .6, new PathSegment( 
+				/* {"start":{"x":315,"y":210},"mid1":{"x":328,"y":243},"mid2":{"x":382,"y":259},"end":{"x":389,"y":210}} */
+				new Vec2(315, 210), new Vec2(328, 243), new Vec2(382, 259), new Vec2(389, 210) 
+				, 105));
 
-			public static final Path CIRCLE_TWO = new Path(x -> .4, new PathSegment( 
-				/* {"start":{"x":389,"y":214},"mid1":{"x":374,"y":178},"mid2":{"x":335,"y":166},"end":{"x":315,"y":210}} */
-				new Vec2(389, 214), new Vec2(374, 178), new Vec2(335, 166), new Vec2(315, 210) 
-				, 102));
+			public static final Path CIRCLE_TWO = new Path(x -> .6, new PathSegment( 
+				/* {"start":{"x":389,"y":210},"mid1":{"x":382,"y":161},"mid2":{"x":328,"y":177},"end":{"x":315,"y":210}} */
+				new Vec2(389, 210), new Vec2(382, 161), new Vec2(328, 177), new Vec2(315, 210) 
+				, 105));
 
-			public static final Path OUT_OF_CIRCLE = new Path(x -> .4, new PathSegment( 
-				/* {"start":{"x":415,"y":234},"mid1":{"x":400,"y":259},"mid2":{"x":390,"y":272},"end":{"x":316,"y":272}} */
-				new Vec2(415, 234), new Vec2(400, 259), new Vec2(390, 272), new Vec2(316, 272) 
-				, 113));
+			public static final Path OUT_OF_CIRCLE = new Path(x -> .70, new PathSegment( 
+				/* {"start":{"x":415,"y":244},"mid1":{"x":400,"y":269},"mid2":{"x":390,"y":272},"end":{"x":316,"y":272}} */
+				new Vec2(415, 244), new Vec2(400, 269), new Vec2(390, 272), new Vec2(316, 272) 
+				, 110));
 
 			// public static final Path OUT_OF_CIRCLE = new Path(x -> .4, new PathSegment( 
 			// /* {"start":{"x":410,"y":320},"mid1":{"x":395,"y":295},"mid2":{"x":390,"y":272},"end":{"x":316,"y":272}} */
 			// new Vec2(410, 320), new Vec2(395, 295), new Vec2(390, 272), new Vec2(316, 272) 
 			// , 114));
 
-			public static final Path SECOND_CURVE = new Path(x -> .4, new PathSegment( 
-				/* {"start":{"x":234,"y":237},"mid1":{"x":164,"y":237},"mid2":{"x":145,"y":166},"end":{"x":90,"y":166}} */
-				new Vec2(234, 237), new Vec2(164, 237), new Vec2(145, 166), new Vec2(90, 166) 
-				, 165));
+			public static final Path SECOND_CURVE = new Path(x -> .75, new PathSegment( 
+				/* {"start":{"x":260,"y":296},"mid1":{"x":133,"y":296},"mid2":{"x":169,"y":237},"end":{"x":105,"y":237}} */
+				new Vec2(260, 296), new Vec2(133, 296), new Vec2(169, 237), new Vec2(105, 237) 
+				, 173));
 			}
 
 public static final class THREE_LOOPS {
