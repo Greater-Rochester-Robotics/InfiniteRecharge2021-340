@@ -12,11 +12,9 @@ public class BouncyPath extends Auto340Command {
 
   public BouncyPath() {
     super(
-      (new RunPath(PathList.AUTONAV_BOUNCE_PATH.TURN_INTO_FIRST_BOUNCE,true)),
-      (new RunPath(PathList.AUTONAV_BOUNCE_PATH.TURN_INTO_FIRST_BOUNCE_POINT_ONE,false)),
+      (new RunPath(PathList.AUTONAV_BOUNCE_PATH.TURN_INTO_FIRST_BOUNCE)),
       (new RunPath(PathList.AUTONAV_BOUNCE_PATH.FIRST_BOUNCE_ONE,false)),
       (new RunPath(PathList.AUTONAV_BOUNCE_PATH.FIRST_BOUNCE_TWO,false)),
-      (new RunPath(PathList.AUTONAV_BOUNCE_PATH.FIRST_BOUNCE_TWO_POINT_ONE,false)),
       (new RunPath(PathList.AUTONAV_BOUNCE_PATH.SECOND_BOUNCE,false)),
       (new RunPath(PathList.AUTONAV_BOUNCE_PATH.TURN_OUT_OF_BOUNCE,false))
     );

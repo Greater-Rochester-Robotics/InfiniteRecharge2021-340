@@ -27,6 +27,7 @@ import frc.robot.commands.Auto.FullTrenchRun;
 import frc.robot.commands.Auto.HungryHippoShot;
 import frc.robot.commands.Auto.SixBallTrench;
 import frc.robot.commands.Auto.TheEighthHokage;
+import frc.robot.commands.Auto.ThreeLoops;
 import frc.robot.commands.Auto.TrenchFiveBall;
 import frc.robot.commands.Auto.TwoBallShot;
 import frc.robot.commands.Climber.ClimberCoDriverFunction;
@@ -103,6 +104,8 @@ public class Robot extends TimedRobot {
     registerAutoMode(RobotContainer.autoChooser, "Barrel Racing 64", new BarrelRace());
 
     registerAutoMode(RobotContainer.autoChooser, "Bouncy Path", new BouncyPath());
+
+    registerAutoMode(RobotContainer.autoChooser, "Loopy Loops", new ThreeLoops());
     
     SmartDashboard.putData(RobotContainer.autoChooser);
     // maybe the heck stuff here to make sure its only done once:

@@ -251,33 +251,25 @@ public class PathList {
 //##########################################################################################################//
 
 public static final class AUTONAV_BOUNCE_PATH {
-	public static final Path TURN_INTO_FIRST_BOUNCE = new Path(x -> .65, new PathSegment( 
-		/* {"start":{"x":75,"y":170},"mid1":{"x":150,"y":170},"mid2":{"x":150,"y":170},"end":{"x":150,"y":123}} */
-		new Vec2(75, 170), new Vec2(150, 170), new Vec2(150, 170), new Vec2(150, 123) 
-		, 111));
-	public static final Path TURN_INTO_FIRST_BOUNCE_POINT_ONE = new Path(x -> .3, new PathSegment( 
-			/* {"start":{"x":210,"y":123},"mid1":{"x":210,"y":110},"mid2":{"x":210,"y":110},"end":{"x":210,"y":103}} */
-			new Vec2(210, 123), new Vec2(210, 110), new Vec2(210, 110), new Vec2(210, 103) 
-		, 20));
+	public static final Path TURN_INTO_FIRST_BOUNCE = new Path(x -> x < .85 ? .65 : .3, new PathSegment( 
+		/* {"start":{"x":75,"y":170},"mid1":{"x":150,"y":170},"mid2":{"x":150,"y":170},"end":{"x":150,"y":103}} */
+		new Vec2(75, 170), new Vec2(150, 170), new Vec2(150, 170), new Vec2(150, 103) 
+		, 128));
 
 			public static final Path FIRST_BOUNCE_ONE = new Path(x -> -.65, new PathSegment( 
 				/* {"start":{"x":150,"y":103},"mid1":{"x":159,"y":163},"mid2":{"x":187,"y":235},"end":{"x":200,"y":235}} */
 				new Vec2(150, 103), new Vec2(159, 163), new Vec2(187, 235), new Vec2(200, 235) 
 				, 144));
 
-			public static final Path FIRST_BOUNCE_TWO = new Path(x -> -.65, new PathSegment( 
-				/* {"start":{"x":189,"y":235},"mid1":{"x":220,"y":235},"mid2":{"x":210,"y":160},"end":{"x":210,"y":123}} */
-				new Vec2(189, 235), new Vec2(220, 235), new Vec2(210, 160), new Vec2(210, 123) 
-				, 123));
-			public static final Path FIRST_BOUNCE_TWO_POINT_ONE = new Path(x -> -.3, new PathSegment( 
-				/* {"start":{"x":210,"y":123},"mid1":{"x":210,"y":110},"mid2":{"x":210,"y":110},"end":{"x":210,"y":103}} */
-				new Vec2(210, 123), new Vec2(210, 110), new Vec2(210, 110), new Vec2(210, 103) 
-				, 20));
+			public static final Path FIRST_BOUNCE_TWO = new Path(x -> x < .85 ? -.65 : -.3, new PathSegment( 
+				/* {"start":{"x":189,"y":235},"mid1":{"x":220,"y":235},"mid2":{"x":210,"y":160},"end":{"x":210,"y":103}} */
+				new Vec2(189, 235), new Vec2(220, 235), new Vec2(210, 160), new Vec2(210, 103) 
+				, 143));
 
-			public static final Path SECOND_BOUNCE = new Path(x -> .65, new PathSegment( 
-				/* {"start":{"x":236,"y":103},"mid1":{"x":223,"y":290},"mid2":{"x":328,"y":270},"end":{"x":316,"y":103}} */
-				new Vec2(236, 103), new Vec2(223, 290), new Vec2(328, 270), new Vec2(316, 103) 
-				, 298));
+			public static final Path SECOND_BOUNCE = new Path(x -> x < .95 ? .65 : .3, new PathSegment( 
+				/* {"start":{"x":236,"y":103},"mid1":{"x":223,"y":290},"mid2":{"x":328,"y":270},"end":{"x":316,"y":83}} */
+				new Vec2(236, 103), new Vec2(223, 290), new Vec2(328, 270), new Vec2(316, 83) 
+				, 313));
 
 			public static final Path TURN_OUT_OF_BOUNCE = new Path(x -> -.65,new PathSegment( 
 				/* {"start":{"x":150,"y":103},"mid1":{"x":150,"y":56},"mid2":{"x":150,"y":56},"end":{"x":90,"y":56}} */
@@ -333,9 +325,13 @@ public static final class THREE_LOOPS {
 				, 139));
 
 			public static final Path LOOP_ONE = new Path(x -> .4,	new PathSegment( 
-				/* {"start":{"x":219,"y":188},"mid1":{"x":346,"y":245},"mid2":{"x":129,"y":304},"end":{"x":219,"y":189}} */
-				new Vec2(219, 188), new Vec2(346, 245), new Vec2(129, 304), new Vec2(219, 189) 
-				, 200));
+				/* {"start":{"x":219,"y":188},"mid1":{"x":282,"y":188},"mid2":{"x":262,"y":256},"end":{"x":229,"y":256}} */
+				new Vec2(219, 188), new Vec2(282, 188), new Vec2(262, 256), new Vec2(229, 256) 
+				, 112));
+			public static final Path LOOP_ONE_MORE = new Path(x -> .4,	new PathSegment( 
+				/* {"start":{"x":229,"y":256},"mid1":{"x":187,"y":256},"mid2":{"x":162,"y":188},"end":{"x":219,"y":188}} */
+				new Vec2(229, 256), new Vec2(187, 256), new Vec2(162, 188), new Vec2(219, 188) 
+				, 114));
 
 			public static final Path STAGE_TWO = new Path(x -> .4, new PathSegment( 
 				/* {"start":{"x":219,"y":188},"mid1":{"x":242,"y":184},"mid2":{"x":323,"y":177},"end":{"x":345,"y":171}} */
@@ -343,9 +339,13 @@ public static final class THREE_LOOPS {
 				, 128));
 			
 			public static final Path LOOP_TWO = new Path(x -> .4,	new PathSegment( 
-				/* {"start":{"x":345,"y":171},"mid1":{"x":479,"y":104},"mid2":{"x":258,"y":74},"end":{"x":346,"y":171}} */
-				new Vec2(345, 171), new Vec2(479, 104), new Vec2(258, 74), new Vec2(346, 171) 
-				, 196));
+				/* {"start":{"x":345,"y":171},"mid1":{"x":397,"y":159},"mid2":{"x":391,"y":129},"end":{"x":352,"y":129}} */
+				new Vec2(345, 171), new Vec2(397, 159), new Vec2(391, 129), new Vec2(352, 129) 
+				, 87));
+			public static final Path LOOP_TWO_MORE = new Path(x -> .4,	new PathSegment( 
+				/* {"start":{"x":352,"y":129},"mid1":{"x":310,"y":129},"mid2":{"x":297,"y":165},"end":{"x":345,"y":171}} */
+				new Vec2(352, 129), new Vec2(310, 129), new Vec2(297, 165), new Vec2(345, 171) 
+				, 88));
 
 			public static final Path LOOP_THREE = new Path(x -> .4,new PathSegment( 
 				/* {"start":{"x":345,"y":171},"mid1":{"x":586,"y":183},"mid2":{"x":395,"y":310},"end":{"x":346,"y":171}} */
@@ -353,8 +353,8 @@ public static final class THREE_LOOPS {
 				, 293));
 			
 			public static final Path STAGE_THREE = new Path(x -> .4,	new PathSegment( 
-				/* {"start":{"x":345,"y":171},"mid1":{"x":345,"y":173},"mid2":{"x":96,"y":148},"end":{"x":98,"y":151}} */
-				new Vec2(345, 171), new Vec2(345, 173), new Vec2(96, 148), new Vec2(98, 151) 
-				, 248));
+				/* {"start":{"x":345,"y":171},"mid1":{"x":345,"y":173},"mid2":{"x":199,"y":160},"end":{"x":178,"y":157}} */
+				new Vec2(345, 171), new Vec2(345, 173), new Vec2(199, 160), new Vec2(178, 157) 
+				, 168));
 			}
 	}
