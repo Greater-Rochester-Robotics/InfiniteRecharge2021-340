@@ -18,6 +18,7 @@ public ThreeLoops() {
     (new RunPath(PathList.THREE_LOOPS.LOOP_TWO,false)),
     (new RunPath(PathList.THREE_LOOPS.LOOP_TWO_MORE,false)),
     (new RunPath(PathList.THREE_LOOPS.LOOP_THREE,false)),
+    (new RunPath(PathList.THREE_LOOPS.LOOP_THREE_MORE,false)),
     (new RunPath(PathList.THREE_LOOPS.STAGE_THREE,false))
 );
   }

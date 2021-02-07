@@ -339,22 +339,26 @@ public static final class THREE_LOOPS {
 				, 128));
 			
 			public static final Path LOOP_TWO = new Path(x -> .4,	new PathSegment( 
-				/* {"start":{"x":345,"y":171},"mid1":{"x":397,"y":159},"mid2":{"x":391,"y":129},"end":{"x":352,"y":129}} */
-				new Vec2(345, 171), new Vec2(397, 159), new Vec2(391, 129), new Vec2(352, 129) 
-				, 87));
-			public static final Path LOOP_TWO_MORE = new Path(x -> .4,	new PathSegment( 
-				/* {"start":{"x":352,"y":129},"mid1":{"x":310,"y":129},"mid2":{"x":297,"y":165},"end":{"x":345,"y":171}} */
-				new Vec2(352, 129), new Vec2(310, 129), new Vec2(297, 165), new Vec2(345, 171) 
-				, 88));
+				/* {"start":{"x":345,"y":171},"mid1":{"x":397,"y":159},"mid2":{"x":399,"y":129},"end":{"x":345,"y":129}} */
+				new Vec2(345, 171), new Vec2(397, 159), new Vec2(399, 129), new Vec2(345, 129) 
+				, 97));
+			public static final Path LOOP_TWO_MORE = new Path(x -> .4,new PathSegment( 
+				/* {"start":{"x":352,"y":129},"mid1":{"x":270,"y":127},"mid2":{"x":335,"y":169},"end":{"x":352,"y":171}} */
+				new Vec2(352, 129), new Vec2(270, 127), new Vec2(335, 169), new Vec2(352, 171) 
+				, 99));
 
-			public static final Path LOOP_THREE = new Path(x -> .4,new PathSegment( 
-				/* {"start":{"x":345,"y":171},"mid1":{"x":586,"y":183},"mid2":{"x":395,"y":310},"end":{"x":346,"y":171}} */
-				new Vec2(345, 171), new Vec2(586, 183), new Vec2(395, 310), new Vec2(346, 171) 
-				, 293));
-			
+			public static final Path LOOP_THREE = new Path(x -> .4, new PathSegment( 
+				/* {"start":{"x":345,"y":171},"mid1":{"x":375,"y":202},"mid2":{"x":449,"y":288},"end":{"x":449,"y":204}} */
+				new Vec2(345, 171), new Vec2(375, 202), new Vec2(449, 288), new Vec2(449, 204) 
+				, 157));
+			public static final Path LOOP_THREE_MORE = new Path(x -> .4,new PathSegment( 
+				/* {"start":{"x":449,"y":204},"mid1":{"x":447,"y":136},"mid2":{"x":377,"y":166},"end":{"x":345,"y":171}} */
+				new Vec2(449, 204), new Vec2(447, 136), new Vec2(377, 166), new Vec2(345, 171) 
+				, 133));
+
 			public static final Path STAGE_THREE = new Path(x -> .4,	new PathSegment( 
-				/* {"start":{"x":345,"y":171},"mid1":{"x":345,"y":173},"mid2":{"x":199,"y":160},"end":{"x":178,"y":157}} */
-				new Vec2(345, 171), new Vec2(345, 173), new Vec2(199, 160), new Vec2(178, 157) 
-				, 168));
+				/* {"start":{"x":345,"y":171},"mid1":{"x":312,"y":139},"mid2":{"x":199,"y":160},"end":{"x":178,"y":157}} */
+				new Vec2(345, 171), new Vec2(312, 139), new Vec2(199, 160), new Vec2(178, 157) 
+				, 171));
 			}
 	}
