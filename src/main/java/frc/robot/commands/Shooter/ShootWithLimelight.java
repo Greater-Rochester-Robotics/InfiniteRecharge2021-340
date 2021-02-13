@@ -30,7 +30,6 @@ public class ShootWithLimelight extends CommandBase {
   @Override
   public void initialize() {
     RobotContainer.shooter.raiseHood();
-    RobotContainer.limelight.setLightState(3);
     speedRpm = Limelight.calcHoodRPM();
     RobotContainer.shooter.resetBallsShot();
     stateIndex = 4;
@@ -75,7 +74,6 @@ public class ShootWithLimelight extends CommandBase {
   // Called once the command ends or is interrupted.
   @Override
   public void end(final boolean interrupted) {
-    RobotContainer.limelight.setLightState(1);
     // System.out.println("Shoot() ended interrupted:" + interrupted);
     RobotContainer.shooter.stop();
     if ( interrupted){
