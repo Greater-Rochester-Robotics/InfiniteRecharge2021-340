@@ -170,7 +170,7 @@ public class SnekLoader extends SubsystemBase {
       break;
 
     case kShootBall3:
-      speeds = new double[] { 0.0, 0.0, 0.0, .9, 1.0 };
+      speeds = new double[] { 0.0, 0.0, 0.0, .85, 1.0 };
       enableOneLimit(-1);
       break;
 
@@ -198,16 +198,16 @@ public class SnekLoader extends SubsystemBase {
     //SmartDashboard Pushes
     if(smartCount == 1){
       smartCount = 0;
-    if (isJammed() && getState() != State.kSpitBalls) {
-      SmartDashboard.putBoolean("isJammed", true);
-    } else {
-      SmartDashboard.putBoolean("isJammed", false);
-    }
+      if (isJammed() && getState() != State.kSpitBalls) {
+        SmartDashboard.putBoolean("isJammed", true);
+      } else {
+        SmartDashboard.putBoolean("isJammed", false);
+      }
     
-    SmartDashboard.putBoolean("Ball 0", handleSensors[0].get());
-    SmartDashboard.putBoolean("Ball 1", handleSensors[1].get());
-    SmartDashboard.putBoolean("Ball 2", handleSensors[2].get());
-    SmartDashboard.putBoolean("Ball 3", handleSensors[3].get());
+      SmartDashboard.putBoolean("Ball 0", handleSensors[0].get());
+      SmartDashboard.putBoolean("Ball 1", handleSensors[1].get());
+      SmartDashboard.putBoolean("Ball 2", handleSensors[2].get());
+      SmartDashboard.putBoolean("Ball 3", handleSensors[3].get());
       SmartDashboard.putBoolean("Ball 4", handleSensors[4].get());
       SmartDashboard.putString("BallsLoaded", ""+ ballsLoaded);
     }
